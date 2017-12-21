@@ -32,3 +32,16 @@ $ git archive --format zip -o /path/to/rev-a.zip 4d268f
 ```
 
 where the hash of the tag can be found by running `git show rev-a` for the specific tag.
+
+## Notes
+
+### MOSFET Pull-ups
+
+The pull-ups are required because of the internal protection diods in the main IC. They will not allow the voltage to exceed ~3.8 V. The resistors connected to the gates thus serve to:
+
+1. protect the gate from inrush current,
+2. pull the gate high on startup and
+3. set the voltage at the gate to a value above the turn-on threshold.
+
+
+
