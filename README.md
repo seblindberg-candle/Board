@@ -4,12 +4,24 @@ The EAGLE Cad board files for the Candle project can be found here.
 
 ## TODO
 
-- [ ] Add a pull-up on the flash memory chip select line.
-- [ ] Fix the MOSFET orientation.
+- [x] Add a pull-up on the flash memory chip select line.
+- [x] Fix the MOSFET orientation.
 - [ ] Fix the flash memory footprint.
-- [ ] Remove the hole.
+- [x] Remove the hole.
 - [ ] Switch out the power supply.
 - [ ] Move the status LEDs to the back.
+- [ ] Move the button to a more reachable position
+- [ ] Make the serial port easier to connect to
+- [ ] Increase the board length to 25-30 cm
+- [x] Bias the display driver current sense line with the DAC
+
+The following hardware changes are based on features/limitations in the peripherals that where not discovered until after the first revision.
+
+- [ ] Connect the flash memory to `SPIC`
+- [ ] Connect the display driver to `USARTD0`
+- [ ] Connect `DISP_LE` to an event output (`PC4`, `PC7`, `PD4` or `PD7`)
+- [ ] Connect `DISP_OE` to a compare output (`PD2`, since it is unused)
+- [ ] Connect the board serial port to `USARTC0`
 
 ## Revisions
 
