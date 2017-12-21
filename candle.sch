@@ -2940,6 +2940,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R38" library="Sebastian 2" deviceset="R" device="_0603" value="10k"/>
 <part name="P40" library="aesthetics" deviceset="VDD" device=""/>
 <part name="TP16" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="P4" library="aesthetics" deviceset="VDD" device=""/>
+<part name="P5" library="aesthetics" deviceset="VDD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3341,6 +3343,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="R38" gate="G$1" x="-78.74" y="30.48" rot="R90"/>
 <instance part="P40" gate="G$1" x="-78.74" y="38.1"/>
 <instance part="TP16" gate="G$1" x="-68.58" y="-33.02"/>
+<instance part="P4" gate="G$1" x="-66.04" y="12.7" rot="R90"/>
+<instance part="P5" gate="G$1" x="-66.04" y="10.16" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -6038,6 +6042,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-78.74" y1="38.1" x2="-78.74" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="P40" gate="G$1" pin="VDD"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="!WP"/>
+<wire x1="-63.5" y1="12.7" x2="-66.04" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="P4" gate="G$1" pin="VDD"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="!HOLD"/>
+<wire x1="-63.5" y1="10.16" x2="-66.04" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="P5" gate="G$1" pin="VDD"/>
+</segment>
 </net>
 <net name="DISP_CLK" class="0">
 <segment>
@@ -6111,6 +6125,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="TX" gate="G$1" pin="TP"/>
 <wire x1="-127" y1="-33.02" x2="-121.92" y2="-33.02" width="0.1524" layer="91"/>
 <label x="-121.92" y="-33.02" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PC3"/>
+<wire x1="-132.08" y1="0" x2="-129.54" y2="0" width="0.1524" layer="91"/>
+<label x="-129.54" y="0" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="!RESET" class="0">
@@ -6248,25 +6267,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="-129.54" y="-7.62" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
-<net name="!FLASH_WP" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="!WP"/>
-<wire x1="-63.5" y1="12.7" x2="-81.28" y2="12.7" width="0.1524" layer="91"/>
-<label x="-81.28" y="12.7" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="!FLASH_HOLD" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="!HOLD"/>
-<wire x1="-63.5" y1="10.16" x2="-81.28" y2="10.16" width="0.1524" layer="91"/>
-<label x="-81.28" y="10.16" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="PC0"/>
-<wire x1="-132.08" y1="7.62" x2="-129.54" y2="7.62" width="0.1524" layer="91"/>
-<label x="-129.54" y="7.62" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
 <net name="RXD0" class="0">
 <segment>
 <pinref part="RX" gate="G$1" pin="TP"/>
@@ -6277,6 +6277,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-124.46" y1="-33.528" x2="-124.46" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="-124.46" y1="-30.48" x2="-121.92" y2="-30.48" width="0.1524" layer="91"/>
 <label x="-121.92" y="-30.48" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PC2"/>
+<wire x1="-132.08" y1="2.54" x2="-129.54" y2="2.54" width="0.1524" layer="91"/>
+<label x="-129.54" y="2.54" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="BTN" class="0">
