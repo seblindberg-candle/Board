@@ -6,14 +6,16 @@ The EAGLE Cad board files for the Candle project can be found here.
 
 - [x] Add a pull-up on the flash memory chip select line.
 - [x] Fix the MOSFET orientation.
-- [ ] Fix the flash memory footprint.
+- [x] Fix the flash memory footprint.
 - [x] Remove the hole.
+- [x] Remove the microphone
 - [ ] Switch out the power supply.
 - [ ] Move the status LEDs to the back.
 - [ ] Move the button to a more reachable position
 - [ ] Make the serial port easier to connect to
 - [ ] Increase the board length to 25-30 cm
 - [x] Bias the display driver current sense line with the DAC
+- [ ] Add one or two light sensors (front and/or back)
 
 The following hardware changes are based on features/limitations in the peripherals that where not discovered until after the first revision.
 
