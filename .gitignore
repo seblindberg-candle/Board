@@ -3,3 +3,4 @@ Gerbers/*
 *.b\#\#
 *.b\#[0-9]
 *.lck
+eagle.epf
