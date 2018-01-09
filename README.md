@@ -2,6 +2,8 @@
 
 The EAGLE Cad board files for the Candle project can be found here.
 
+![Prototype 1](Docs/Assets/prototype-1.jpg)
+
 ## TODO
 
 - [x] Add a pull-up on the flash memory chip select line.
