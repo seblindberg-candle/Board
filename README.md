@@ -47,5 +47,9 @@ The pull-ups are required because of the internal protection diods in the main I
 2. pull the gate high on startup and
 3. set the voltage at the gate to a value above the turn-on threshold.
 
+## Scripts
 
+Some ruby scripts are included for generating EAGLE commands that place some of the more repetitive components. There are tools in EAGLE for achieving the same thing and they are most likely better, but a) I did not know that at the time and b) the scripts allowed be to also remove the labels, which would otherwise have been quite a task in itself. 
+
+To run the scripts you need to locate the Scripts folder in your terminal of choice and type `ruby place-diods.rb`. Then press `enter` and copy the output into the command input in EAGLE.
 
